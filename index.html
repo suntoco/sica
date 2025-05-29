@@ -1,13 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-<title>Suntoco Sica</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suntoco Sica - IT Consultant Agency</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<h1>Suntoco IT Consultant Agency (SICA)</h1>
-<p>Dịch vụ IT Consultant, Artificial intelligence agent, Application, Mobile Marketing, Cloud, ERP, CRM,...</p>
-
-
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <span>Suntoco <span class="highlight">Sica</span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Dịch vụ</a></li>
+                    <li><a href="#about">Về chúng tôi</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <a href="javascript:void(0)" class="btn-header" id="openPopupBtn">Nhận tư vấn</a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container hero-content">
+            <div>
+                <h1>Giải pháp <span class="highlight">Công nghệ</span> cho Doanh nghiệp</h1>
+                <p>
+                    Suntoco Sica - Đơn vị tư vấn & triển khai IT Consultant, AI Agent, Ứng dụng, Mobile Marketing, Cloud, ERP, CRM... <br>
+                    <span class="slogan">Đồng hành cùng doanh nghiệp chuyển đổi số!</span>
+                </p>
+                <a href="javascript:void(0)" class="btn-cta" id="openPopupBtn2">Nhận tư vấn miễn phí</a>
+            </div>
+            <!-- <img src="https://cdn.jsdelivr.net/gh/duyplus/cdn@main/vscode-landing/hero-tech.svg" alt="Suntoco Sica Technology" class="hero-img"> -->
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Dịch vụ nổi bật</h2>
+            <div class="service-list">
+                <div class="service-card">
+                    <span class="service-icon">💡</span>
+                    <h3>IT Consultant</h3>
+                    <p>Tư vấn chiến lược công nghệ, tối ưu vận hành doanh nghiệp.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🤖</span>
+                    <h3>AI Agent</h3>
+                    <p>Triển khai giải pháp AI, tự động hóa quy trình kinh doanh.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">📱</span>
+                    <h3>Ứng dụng & Mobile Marketing</h3>
+                    <p>Phát triển ứng dụng, giải pháp marketing đa nền tảng.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">☁️</span>
+                    <h3>Cloud, ERP, CRM</h3>
+                    <p>Chuyển đổi số với Cloud, quản trị doanh nghiệp với ERP, CRM.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container about-flex">
+            <div>
+                <h2>Về Suntoco Sica</h2>
+                <p>
+                    Chúng tôi là đối tác công nghệ tin cậy, đồng hành cùng doanh nghiệp trên hành trình chuyển đổi số. Đội ngũ chuyên gia giàu kinh nghiệm, tận tâm mang đến giải pháp tối ưu, hiện đại và bảo mật.
+                </p>
+                <ul>
+                    <li>10+ năm kinh nghiệm tư vấn & triển khai</li>
+                    <li>100+ dự án thành công</li>
+                    <li>Đối tác của các tập đoàn lớn</li>
+                </ul>
+            </div>
+            <!-- <img src="https://cdn.jsdelivr.net/gh/duyplus/cdn@main/vscode-landing/about-team.svg" alt="Suntoco Sica Team" class="about-img"> -->
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container contact-flex">
+            <div>
+                <h2>Liên hệ tư vấn</h2>
+                <form id="contactForm">
+                    <input type="text" placeholder="Họ và tên" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Số điện thoại" required>
+                    <textarea placeholder="Nội dung cần tư vấn" required></textarea>
+                    <button type="submit">Gửi yêu cầu</button>
+                </form>
+                <div id="formMessage"></div>
+            </div>
+            <div class="contact-info">
+                <h3>Thông tin liên hệ</h3>
+                <p>Địa chỉ: 198 QL55 Hàm Tân, Bình Thuận</p>
+                <p>Email: contact@suntoco.vn</p>
+                <p>Hotline: 0977140536</p>
+            </div>
+        </div>
+    </section>
+    <!-- Popup Form -->
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="popup-content">
+            <button class="close-popup" id="closePopupBtn">&times;</button>
+            <h2>Nhận tư vấn miễn phí</h2>
+            <form id="popupContactForm">
+                <input type="text" placeholder="Họ và tên" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Số điện thoại" required>
+                <textarea placeholder="Nội dung cần tư vấn" required></textarea>
+                <button type="submit">Gửi yêu cầu</button>
+            </form>
+            <div id="popupFormMessage"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="container footer-flex">
+            <span>&copy; 2025 Suntoco Sica. All rights reserved.</span>
+            <span>Made with <span style="color:#007ACC;">&#10084;</span> Suntoco Team</span>
+        </div>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
